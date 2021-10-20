@@ -1,4 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <script src="./scripts.js" type="text/javascript"></script>
+    <head>
+        <script src="./scripts.js" type="text/javascript" defer></script>
+        <link href="./style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Piedra, Papel o Tijera</h1>
+        <div class="buttons">
+            <button class="option_btn" id="rock">Piedra</button>
+            <button class="option_btn" id="paper">Papel</button>
+            <button class="option_btn" id="scissors">Tijera</button>
+        </div>
+        <div class="resultados">
+            <div class="res-list">
+                <h3>Last results</h3>
+                <ul class="resBullets">
+                </ul>
+            </div>
+            <div class="score">
+                <h3>Scores</h3>
+                <table>
+                    <tr>
+                        <td>User</td>
+                        <td>Computer</td>
+                    </tr>
+                    <tr>
+                        <td id="user_points">0</td>
+                        <td id="computer_points">0</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="winnerMessage"></div>
+    </body>
 </html>
